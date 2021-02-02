@@ -20,9 +20,11 @@ def handle_data():
     edu = "Образование: " + request.form['EDU']
     prof = "Профессиональные навыки: " + request.form['PROF']
     num = "Контактный телефон: " + request.form['NUM']
+    # app_path = get_install_dir()
+    # pdf.add.font: = os.path.join(app_path, '/static/font')
     pdf = FPDF(orientation='P', unit='mm', format='A4')
-    pdf.add_font('Times', '', 'static/font/times.ttf', uni=True)
-    pdf.add_font('Times', 'B', 'static/font/timesbd.ttf', uni=True)
+    pdf.add_font('Times', '', 'font/times.ttf', uni=True)
+    pdf.add_font('Times', 'B', 'font/timesbd.ttf', uni=True)
     pdf.set_font('Times', '', 14)
     pdf.add_page()
     pdf.cell(100, 5, txt=fio, ln=1)
