@@ -17,7 +17,8 @@
     <form action="{{ url_for('handle_data') }}" method="post">
 	    <input class="form-control" style="font-family: Roboto; font-size: 14px" type="text" name="FIO" id="FIO" placeholder="ФИО" >
         <br>
-        <input class="form-control" style="font-family: Roboto; font-size: 14px" type="text" name="DOB" id="DOB" placeholder="Дата рождения:">
+        <label class="form-label">Дата рождения:</label>
+        <input class="form-control" style="font-family: Roboto; font-size: 14px" type="date" name="DOB" id="DOB" placeholder="Дата рождения:">
         <br>
         <label class="form-label">Пол:</label>
         <br>
